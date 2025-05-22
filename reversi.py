@@ -556,11 +556,11 @@ def play_interactive_game():
         ai_name = "Minimax"
     elif choice == 3:
         human_player = 1
-        ai_player = MCTSPlayer(2, iterations=1000)
+        ai_player = MCTSPlayer(2, iterations=10)
         ai_name = "MCTS"
     else:
         human_player = 2
-        ai_player = MCTSPlayer(1, iterations=1000)
+        ai_player = MCTSPlayer(1, iterations=10)
         ai_name = "MCTS"
     
     print(f"\nPlaying as {'Black' if human_player == 1 else 'White'} against {ai_name}.")
